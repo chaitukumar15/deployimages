@@ -1,8 +1,45 @@
-<html>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
     
-    <img src="./html/code.png" alt="" width="200px">
+<div>
+    <img id="1"  src="https://www.cookwithmanali.com/wp-content/uploads/2014/07/Rasmalai-Recipe.jpg" width="100" height="100" style="border: 2px solid red;" alt="">
+</div>
+
+
+<img id="2" src="./html/code.png" width="100" height="100" alt="">
+<img id="3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPm-vyHQOROoBa1qS1-7hpW2WeaGr8WBtEjQ&s" width="100" height="100" alt="">
+<script>
+    
+
+
+    var  id1=document.getElementById("1");
+
+    var id2=document.getElementById("2");
+
+    id2.addEventListener("mouseover",fn1);
+
+    function fn1(){
+
+        id1.setAttribute("src","./html/code.png")
+    }
+
+    var id3=document.getElementById("3");
+
+    id3.addEventListener("mouseover",fn2);
+
+    function fn2(){
+
+        id1.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPm-vyHQOROoBa1qS1-7hpW2WeaGr8WBtEjQ&s")
+    }
+
+</script>
+
+
 </body>
 </html>
